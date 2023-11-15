@@ -1,0 +1,380 @@
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport maxtime support minlen maxlen target  ext
+       0.04    0.1    1 none FALSE            TRUE       5   0.001      2      3  rules TRUE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+
+Absolute minimum support count: 1329 
+
+set item appearances ...[4 item(s)] done [0.00s].
+set transactions ...[33 item(s), 1329266 transaction(s)] done [0.26s].
+sorting and recoding items ... [33 item(s)] done [0.04s].
+creating transaction tree ... done [0.77s].
+checking subsets of size 1 2 3 done [0.00s].
+writing ... [404 rule(s)] done [0.00s].
+creating S4 object  ... done [0.12s].
+
+
+# DAY_OF_WEEK_ on LHS Subsets:
+     lhs                                                 rhs                support     confidence coverage   lift     count
+[1]  {DAY_OF_WEEK=Sunday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Long}   0.001597122 0.05559920 0.02872563 1.473702 2123 
+[2]  {DAY_OF_WEEK=Sunday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Long}   0.001673104 0.05535092 0.03022721 1.467121 2224 
+[3]  {DAY_OF_WEEK=Sunday, CRS_ARR_TIME=Overnight}     => {ARR_DELAY=Medium} 0.001044185 0.08357418 0.01249411 1.460722 1388 
+[4]  {DAY_OF_WEEK=Sunday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Long}   0.001029892 0.05501306 0.01872086 1.458165 1369 
+[5]  {DAY_OF_WEEK=Sunday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.001515122 0.08093229 0.01872086 1.414547 2014 
+[6]  {DAY_OF_WEEK=Sunday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.002179398 0.07586947 0.02872563 1.326058 2897 
+[7]  {DAY_OF_WEEK=Sunday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Medium} 0.002239582 0.07409159 0.03022721 1.294984 2977 
+[8]  {DAY_OF_WEEK=Sunday, CRS_ARR_TIME=Overnight}     => {ARR_DELAY=Short}  0.001097598 0.08784923 0.01249411 1.258189 1459 
+[9]  {DAY_OF_WEEK=Sunday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Long}   0.001433122 0.04660436 0.03075081 1.235286 1905 
+[10] {DAY_OF_WEEK=Sunday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Short}  0.001613673 0.08619650 0.01872086 1.234518 2145 
+
+     lhs                                                 rhs                support     confidence coverage   lift     count
+[1]  {DAY_OF_WEEK=Monday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Severe} 0.001125433 0.04029196 0.02793196 1.685297 1496 
+[2]  {DAY_OF_WEEK=Monday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Long}   0.001684388 0.06030327 0.02793196 1.598386 2239 
+[3]  {DAY_OF_WEEK=Monday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Long}   0.001511360 0.05849128 0.02583907 1.550358 2009 
+[4]  {DAY_OF_WEEK=Monday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Long}   0.001577562 0.05340498 0.02953961 1.415542 2097 
+[5]  {DAY_OF_WEEK=Monday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.001175085 0.07720824 0.01521968 1.349458 1562 
+[6]  {DAY_OF_WEEK=Monday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Medium} 0.002149306 0.07694794 0.02793196 1.344908 2857 
+[7]  {DAY_OF_WEEK=Monday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.001965747 0.07607651 0.02583907 1.329677 2613 
+[8]  {DAY_OF_WEEK=Monday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Long}   0.001879985 0.04872770 0.03858144 1.291567 2499 
+[9]  {DAY_OF_WEEK=Monday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Medium} 0.002132004 0.07217440 0.02953961 1.261475 2834 
+[10] {DAY_OF_WEEK=Monday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Medium} 0.002694720 0.06984498 0.03858144 1.220761 3582 
+[11] {DAY_OF_WEEK=Monday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Short}  0.002350921 0.08416602 0.02793196 1.205437 3125 
+
+     lhs                                                   rhs                support     confidence coverage   lift     count
+[1]  {DAY_OF_WEEK=Thursday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Long}   0.001412810 0.06185771 0.02283967 1.639588 1878 
+[2]  {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Long}   0.001502333 0.06152187 0.02441949 1.630687 1997 
+[3]  {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.001290186 0.08943005 0.01442676 1.563072 1715 
+[4]  {DAY_OF_WEEK=Thursday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.001971013 0.08629776 0.02283967 1.508325 2620 
+[5]  {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Medium} 0.002058279 0.08428835 0.02441949 1.473205 2736 
+[6]  {DAY_OF_WEEK=Thursday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Medium} 0.001970260 0.07940213 0.02481369 1.387803 2619 
+[7]  {DAY_OF_WEEK=Thursday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Long}   0.001286424 0.05184332 0.02481369 1.374149 1710 
+[8]  {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Short}  0.002313307 0.09473198 0.02441949 1.356764 3075 
+[9]  {DAY_OF_WEEK=Thursday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Short}  0.002132756 0.09337945 0.02283967 1.337393 2835 
+[10] {DAY_OF_WEEK=Thursday, DISTANCE=1000-1249 miles}   => {ARR_DELAY=Medium} 0.001087818 0.07614935 0.01428533 1.330950 1446 
+[11] {DAY_OF_WEEK=Thursday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Short}  0.002299013 0.09265098 0.02481369 1.326960 3056 
+[12] {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Medium} 0.002363710 0.07431761 0.03180552 1.298935 3142 
+[13] {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Long}   0.001524149 0.04792090 0.03180552 1.270182 2026 
+[14] {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Short}  0.001278149 0.08859571 0.01442676 1.268880 1699 
+[15] {DAY_OF_WEEK=Thursday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Short}  0.002700739 0.08491414 0.03180552 1.216152 3590 
+
+     lhs                                                 rhs                support     confidence coverage   lift     count
+[1]  {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Long}   0.001627214 0.06669133 0.02439918 1.767707  2163
+[2]  {DAY_OF_WEEK=Friday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Long}   0.001518131 0.06629653 0.02289910 1.757243  2018
+[3]  {DAY_OF_WEEK=Friday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.002243343 0.09796642 0.02289910 1.712272  2982
+[4]  {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Medium} 0.002363710 0.09687664 0.02439918 1.693225  3142
+[5]  {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.001399268 0.09681953 0.01445234 1.692227  1860
+[6]  {DAY_OF_WEEK=Friday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Medium} 0.002150059 0.08673222 0.02478962 1.515919  2858
+[7]  {DAY_OF_WEEK=Friday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Long}   0.001404535 0.05665817 0.02478962 1.501770  1867
+[8]  {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Medium} 0.002630023 0.08251705 0.03187248 1.442246  3496
+[9]  {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Long}   0.001648278 0.05171478 0.03187248 1.370742  2191
+[10] {DAY_OF_WEEK=Friday, CRS_ARR_TIME=Early Evening} => {ARR_DELAY=Short}  0.002350921 0.09483491 0.02478962 1.358238  3125
+[11] {DAY_OF_WEEK=Friday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Short}  0.002169618 0.09474687 0.02289910 1.356977  2884
+[12] {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Short}  0.002305784 0.09450251 0.02439918 1.353478  3065
+[13] {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Late Evening}  => {ARR_DELAY=Short}  0.001356388 0.09385248 0.01445234 1.344168  1803
+[14] {DAY_OF_WEEK=Friday, CRS_DEP_TIME=Afternoon}     => {ARR_DELAY=Short}  0.002896335 0.09087261 0.03187248 1.301490  3850
+[15] {DAY_OF_WEEK=Friday, DISTANCE=500-749 miles}     => {ARR_DELAY=Medium} 0.001923618 0.07089583 0.02713302 1.239128  2557
+[16] {DAY_OF_WEEK=Friday, DISTANCE=750-999 miles}     => {ARR_DELAY=Medium} 0.001429360 0.07088230 0.02016526 1.238892  1900
+[17] {DAY_OF_WEEK=Friday, DISTANCE=< 250 miles}       => {ARR_DELAY=Medium} 0.001420333 0.07056889 0.02012690 1.233414  1888
+[18] {DAY_OF_WEEK=Friday, CRS_ARR_TIME=Afternoon}     => {ARR_DELAY=Medium} 0.002303527 0.07030676 0.03276395 1.228832  3062
+[19] {DAY_OF_WEEK=Friday, DISTANCE=250-499 miles}     => {ARR_DELAY=Medium} 0.002435931 0.06991406 0.03484178 1.221969  3238
+[20] {DAY_OF_WEEK=Friday}                             => {ARR_DELAY=Medium} 0.009565429 0.06962621 0.13738259 1.216938 12715
+[21] {DAY_OF_WEEK=Friday, DISTANCE=250-499 miles}     => {ARR_DELAY=Long}   0.001593361 0.04573131 0.03484178 1.212145  2118
+[22] {DAY_OF_WEEK=Friday, DISTANCE=750-999 miles}     => {ARR_DELAY=Short}  0.001692663 0.08393956 0.02016526 1.202194  2250
+
+    lhs                                                   rhs                support     confidence coverage   lift     count
+[1] {DAY_OF_WEEK=Saturday, CRS_DEP_TIME=Early Evening} => {ARR_DELAY=Medium} 0.001553489 0.07248412 0.02143213 1.266889 2065 
+[2] {DAY_OF_WEEK=Saturday, CRS_ARR_TIME=Late Evening}  => {ARR_DELAY=Medium} 0.001443654 0.07209678 0.02002383 1.260119 1919 
+
+
+# DISTANCE on LHS subsets:  
+    lhs                                                   rhs                support     confidence coverage   lift     count
+[1] {CRS_ARR_TIME=Late Evening, DISTANCE=< 250 miles}  => {ARR_DELAY=Long}   0.001026130 0.05257478 0.01951754 1.393537 1364 
+[2] {CRS_DEP_TIME=Early Evening, DISTANCE=< 250 miles} => {ARR_DELAY=Long}   0.001312002 0.05121880 0.02561564 1.357595 1744 
+[3] {CRS_ARR_TIME=Early Evening, DISTANCE=< 250 miles} => {ARR_DELAY=Long}   0.001318021 0.04767477 0.02764608 1.263658 1752 
+[4] {CRS_ARR_TIME=Late Evening, DISTANCE=< 250 miles}  => {ARR_DELAY=Medium} 0.001406039 0.07203978 0.01951754 1.259122 1869 
+[5] {DAY_OF_WEEK=Friday, DISTANCE=< 250 miles}         => {ARR_DELAY=Medium} 0.001420333 0.07056889 0.02012690 1.233414 1888 
+[6] {CRS_DEP_TIME=Early Evening, DISTANCE=< 250 miles} => {ARR_DELAY=Medium} 0.001781434 0.06954479 0.02561564 1.215514 2368 
+
+     lhs                                                     rhs                support     confidence coverage   lift     count
+[1]  {CRS_ARR_TIME=Late Evening, DISTANCE=250-499 miles}  => {ARR_DELAY=Long}   0.002068811 0.05492530 0.03766590 1.455839 2750 
+[2]  {CRS_DEP_TIME=Early Evening, DISTANCE=250-499 miles} => {ARR_DELAY=Long}   0.002465270 0.05378126 0.04583883 1.425516 3277 
+[3]  {CRS_DEP_TIME=Late Evening, DISTANCE=250-499 miles}  => {ARR_DELAY=Long}   0.001468480 0.05349557 0.02745049 1.417943 1952 
+[4]  {CRS_DEP_TIME=Late Evening, DISTANCE=250-499 miles}  => {ARR_DELAY=Medium} 0.002127490 0.07750281 0.02745049 1.354606 2828 
+[5]  {CRS_ARR_TIME=Early Evening, DISTANCE=250-499 miles} => {ARR_DELAY=Long}   0.002405087 0.05041712 0.04770377 1.336346 3197 
+[6]  {CRS_ARR_TIME=Late Evening, DISTANCE=250-499 miles}  => {ARR_DELAY=Medium} 0.002800794 0.07435887 0.03766590 1.299656 3723 
+[7]  {CRS_DEP_TIME=Early Evening, DISTANCE=250-499 miles} => {ARR_DELAY=Medium} 0.003383070 0.07380358 0.04583883 1.289950 4497 
+[8]  {CRS_ARR_TIME=Early Evening, DISTANCE=250-499 miles} => {ARR_DELAY=Medium} 0.003362758 0.07049250 0.04770377 1.232079 4470 
+[9]  {DAY_OF_WEEK=Friday, DISTANCE=250-499 miles}         => {ARR_DELAY=Medium} 0.002435931 0.06991406 0.03484178 1.221969 3238 
+[10] {DAY_OF_WEEK=Friday, DISTANCE=250-499 miles}         => {ARR_DELAY=Long}   0.001593361 0.04573131 0.03484178 1.212145 2118 
+
+    lhs                                                     rhs                support     confidence coverage   lift     count
+[1] {CRS_DEP_TIME=Early Evening, DISTANCE=500-749 miles} => {ARR_DELAY=Long}   0.001956719 0.05795196 0.03376450 1.536063 2601 
+[2] {CRS_ARR_TIME=Late Evening, DISTANCE=500-749 miles}  => {ARR_DELAY=Long}   0.001791966 0.05668459 0.03161294 1.502471 2382 
+[3] {CRS_DEP_TIME=Late Evening, DISTANCE=500-749 miles}  => {ARR_DELAY=Long}   0.001066754 0.05317434 0.02006145 1.409428 1418 
+[4] {CRS_ARR_TIME=Late Evening, DISTANCE=500-749 miles}  => {ARR_DELAY=Medium} 0.002478812 0.07841131 0.03161294 1.370485 3295 
+[5] {CRS_DEP_TIME=Early Evening, DISTANCE=500-749 miles} => {ARR_DELAY=Medium} 0.002608206 0.07724700 0.03376450 1.350135 3467 
+[6] {CRS_DEP_TIME=Late Evening, DISTANCE=500-749 miles}  => {ARR_DELAY=Medium} 0.001523397 0.07593655 0.02006145 1.327231 2025 
+[7] {CRS_ARR_TIME=Early Evening, DISTANCE=500-749 miles} => {ARR_DELAY=Long}   0.001734040 0.04859281 0.03568511 1.287991 2305 
+[8] {DAY_OF_WEEK=Friday, DISTANCE=500-749 miles}         => {ARR_DELAY=Medium} 0.001923618 0.07089583 0.02713302 1.239128 2557 
+[9] {CRS_ARR_TIME=Early Evening, DISTANCE=500-749 miles} => {ARR_DELAY=Medium} 0.002511913 0.07039106 0.03568511 1.230306 3339 
+
+     lhs                                                     rhs                support     confidence coverage   lift     count
+[1]  {CRS_DEP_TIME=Late Evening, DISTANCE=750-999 miles}  => {ARR_DELAY=Medium} 0.001181855 0.08747216 0.01351122 1.528852 1571 
+[2]  {CRS_ARR_TIME=Late Evening, DISTANCE=750-999 miles}  => {ARR_DELAY=Long}   0.001356388 0.05375030 0.02523498 1.424695 1803 
+[3]  {CRS_DEP_TIME=Early Evening, DISTANCE=750-999 miles} => {ARR_DELAY=Long}   0.001388736 0.05293494 0.02623478 1.403083 1846 
+[4]  {CRS_ARR_TIME=Late Evening, DISTANCE=750-999 miles}  => {ARR_DELAY=Medium} 0.001848389 0.07324708 0.02523498 1.280224 2457 
+[5]  {CRS_DEP_TIME=Early Evening, DISTANCE=750-999 miles} => {ARR_DELAY=Medium} 0.001895031 0.07223353 0.02623478 1.262509 2519 
+[6]  {CRS_DEP_TIME=Late Evening, DISTANCE=750-999 miles}  => {ARR_DELAY=Short}  0.001186369 0.08780624 0.01351122 1.257573 1577 
+[7]  {DAY_OF_WEEK=Friday, DISTANCE=750-999 miles}         => {ARR_DELAY=Medium} 0.001429360 0.07088230 0.02016526 1.238892 1900 
+[8]  {CRS_ARR_TIME=Early Evening, DISTANCE=750-999 miles} => {ARR_DELAY=Long}   0.001188626 0.04582765 0.02593687 1.214699 1580 
+[9]  {CRS_ARR_TIME=Early Evening, DISTANCE=750-999 miles} => {ARR_DELAY=Medium} 0.001791214 0.06906053 0.02593687 1.207051 2381 
+[10] {DAY_OF_WEEK=Friday, DISTANCE=750-999 miles}         => {ARR_DELAY=Short}  0.001692663 0.08393956 0.02016526 1.202194 2250 
+
+     lhs                                                       rhs                support     confidence coverage   lift     count
+[1]  {CRS_ARR_TIME=Late Evening, DISTANCE=1000-1249 miles}  => {ARR_DELAY=Long}   0.001030644 0.05701207 0.01807765 1.511151 1370 
+[2]  {CRS_DEP_TIME=Early Evening, DISTANCE=1000-1249 miles} => {ARR_DELAY=Long}   0.001042681 0.05637125 0.01849667 1.494165 1386 
+[3]  {CRS_DEP_TIME=Early Evening, DISTANCE=1000-1249 miles} => {ARR_DELAY=Medium} 0.001485030 0.08028633 0.01849667 1.403257 1974 
+[4]  {CRS_ARR_TIME=Late Evening, DISTANCE=1000-1249 miles}  => {ARR_DELAY=Medium} 0.001451177 0.08027466 0.01807765 1.403053 1929 
+[5]  {DAY_OF_WEEK=Thursday, DISTANCE=1000-1249 miles}       => {ARR_DELAY=Medium} 0.001087818 0.07614935 0.01428533 1.330950 1446 
+[6]  {CRS_DEP_TIME=Afternoon, DISTANCE=1000-1249 miles}     => {ARR_DELAY=Long}   0.001194644 0.04804405 0.02486560 1.273446 1588 
+[7]  {CRS_ARR_TIME=Early Evening, DISTANCE=1000-1249 miles} => {ARR_DELAY=Medium} 0.001354131 0.07077976 0.01913161 1.237099 1800 
+[8]  {CRS_DEP_TIME=Early Evening, DISTANCE=1000-1249 miles} => {ARR_DELAY=Short}  0.001591856 0.08606174 0.01849667 1.232588 2116 
+[9]  {CRS_ARR_TIME=Late Evening, DISTANCE=1000-1249 miles}  => {ARR_DELAY=Short}  0.001554241 0.08597586 0.01807765 1.231358 2066 
+[10] {CRS_DEP_TIME=Afternoon, DISTANCE=1000-1249 miles}     => {ARR_DELAY=Medium} 0.001720498 0.06919190 0.02486560 1.209347 2287 
+
+    lhs                                                   rhs               support     confidence coverage   lift     count
+[1] {CRS_ARR_TIME=Late Evening, DISTANCE=> 2000 miles} => {ARR_DELAY=Short} 0.001135965 0.08819063 0.01288079 1.263078 1510 
+
+
+# Rules with NAS_DELAY on LHS:
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport maxtime support minlen maxlen target  ext
+       0.04    0.1    1 none FALSE            TRUE       5   0.001      2      3  rules TRUE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+
+Absolute minimum support count: 1329 
+
+set item appearances ...[4 item(s)] done [0.00s].
+set transactions ...[33 item(s), 1329266 transaction(s)] done [0.25s].
+sorting and recoding items ... [33 item(s)] done [0.03s].
+creating transaction tree ... done [0.73s].
+checking subsets of size 1 2 done [0.00s].
+writing ... [65 rule(s)] done [0.00s].
+creating S4 object  ... done [0.12s].
+
+    lhs                   rhs                    support     confidence coverage    lift     count
+[1] {NAS_DELAY=Long}   => {DAY_OF_WEEK=Friday}   0.001169066 0.1799236  0.006497571 1.309654 1554 
+[2] {NAS_DELAY=Long}   => {DAY_OF_WEEK=Monday}   0.001282663 0.1974065  0.006497571 1.208241 1705 
+[3] {NAS_DELAY=Long}   => {DAY_OF_WEEK=Sunday}   0.001090828 0.1678824  0.006497571 1.008475 1450 
+[4] {NAS_DELAY=Medium} => {DAY_OF_WEEK=Thursday} 0.002360701 0.1465191  0.016111899 1.069250 3138 
+[5] {NAS_DELAY=Medium} => {DAY_OF_WEEK=Friday}   0.002496867 0.1549704  0.016111899 1.128020 3319 
+[6] {NAS_DELAY=Medium} => {DAY_OF_WEEK=Monday}   0.003040776 0.1887286  0.016111899 1.155127 4042 
+[7] {NAS_DELAY=Short}  => {DAY_OF_WEEK=Thursday} 0.005339789 0.1522229  0.035078758 1.110875 7098 
+[8] {NAS_DELAY=Short}  => {DAY_OF_WEEK=Friday}   0.005387936 0.1535954  0.035078758 1.118012 7162 
+[9] {NAS_DELAY=Short}  => {DAY_OF_WEEK=Monday}   0.006472745 0.1845204  0.035078758 1.129370 8604 
+
+    lhs                   rhs                          support     confidence coverage    lift     count
+[1] {NAS_DELAY=Long}   => {CRS_ARR_TIME=Late Evening}  0.001451177 0.2233414  0.006497571 1.371024 1929 
+[2] {NAS_DELAY=Long}   => {CRS_ARR_TIME=Early Evening} 0.001527911 0.2351511  0.006497571 1.289951 2031 
+[3] {NAS_DELAY=Medium} => {CRS_ARR_TIME=Mid-Morning}   0.001990572 0.1235467  0.016111899 1.045968 2646 
+[4] {NAS_DELAY=Medium} => {CRS_ARR_TIME=Late Evening}  0.003026482 0.1878414  0.016111899 1.153101 4023 
+[5] {NAS_DELAY=Medium} => {CRS_ARR_TIME=Early Evening} 0.003111492 0.1931176  0.016111899 1.059371 4136 
+[6] {NAS_DELAY=Short}  => {CRS_ARR_TIME=Early Morning} 0.003967603 0.1131056  0.035078758 1.042161 5274 
+[7] {NAS_DELAY=Short}  => {CRS_ARR_TIME=Mid-Morning}   0.004661219 0.1328787  0.035078758 1.124974 6196 
+[8] {NAS_DELAY=Short}  => {CRS_ARR_TIME=Late Evening}  0.005962689 0.1699801  0.035078758 1.043455 7926 
+[9] {NAS_DELAY=Short}  => {CRS_ARR_TIME=Early Evening} 0.006715736 0.1914474  0.035078758 1.050209 8927 
+
+    lhs                   rhs                        support     confidence coverage    lift     count
+[1] {NAS_DELAY=Long}   => {DISTANCE=500-749 miles}   0.001314259 0.20226931 0.006497571 1.032387 1747 
+[2] {NAS_DELAY=Medium} => {DISTANCE=> 2000 miles}    0.001258589 0.07811552 0.016111899 1.413373 1673 
+[3] {NAS_DELAY=Medium} => {DISTANCE=1500-2000 miles} 0.001012589 0.06284727 0.016111899 1.073168 1346 
+[4] {NAS_DELAY=Medium} => {DISTANCE=1000-1249 miles} 0.001995086 0.12382687 0.016111899 1.185170 2652 
+[5] {NAS_DELAY=Short}  => {DISTANCE=1250-1499 miles} 0.001546718 0.04409273 0.035078758 1.107560 2056 
+[6] {NAS_DELAY=Short}  => {DISTANCE=> 2000 miles}    0.002774464 0.07909241 0.035078758 1.431049 3688 
+[7] {NAS_DELAY=Short}  => {DISTANCE=1500-2000 miles} 0.002447215 0.06976345 0.035078758 1.191267 3253 
+[8] {NAS_DELAY=Short}  => {DISTANCE=1000-1249 miles} 0.004191035 0.11947500 0.035078758 1.143518 5571 
+[9] {NAS_DELAY=Short}  => {DISTANCE=750-999 miles}   0.005287881 0.15074310 0.035078758 1.024588 7029 
+
+
+# Rules with LATE_AIRCRAFT_DELAY on LHS:
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport maxtime support minlen maxlen target  ext
+       0.04    0.1    1 none FALSE            TRUE       5   0.001      2      3  rules TRUE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+
+Absolute minimum support count: 1329 
+
+set item appearances ...[4 item(s)] done [0.00s].
+set transactions ...[33 item(s), 1329266 transaction(s)] done [0.26s].
+sorting and recoding items ... [33 item(s)] done [0.03s].
+creating transaction tree ... done [0.72s].
+checking subsets of size 1 2 done [0.00s].
+writing ... [86 rule(s)] done [0.00s].
+creating S4 object  ... done [0.12s].
+
+     lhs                             rhs                    support     confidence coverage    lift     count
+[1]  {LATE_AIRCRAFT_DELAY=Severe} => {DAY_OF_WEEK=Friday}   0.001458700 0.1494182  0.009762531 1.087607 1939 
+[2]  {LATE_AIRCRAFT_DELAY=Severe} => {DAY_OF_WEEK=Monday}   0.001887508 0.1933421  0.009762531 1.183364 2509 
+[3]  {LATE_AIRCRAFT_DELAY=Severe} => {DAY_OF_WEEK=Sunday}   0.001674608 0.1715343  0.009762531 1.030412 2226 
+[4]  {LATE_AIRCRAFT_DELAY=Long}   => {DAY_OF_WEEK=Thursday} 0.002623252 0.1520384  0.017253883 1.109528 3487 
+[5]  {LATE_AIRCRAFT_DELAY=Long}   => {DAY_OF_WEEK=Friday}   0.002752647 0.1595378  0.017253883 1.161267 3659 
+[6]  {LATE_AIRCRAFT_DELAY=Long}   => {DAY_OF_WEEK=Monday}   0.003131051 0.1814694  0.017253883 1.110696 4162 
+[7]  {LATE_AIRCRAFT_DELAY=Long}   => {DAY_OF_WEEK=Sunday}   0.002907620 0.1685197  0.017253883 1.012303 3865 
+[8]  {LATE_AIRCRAFT_DELAY=Medium} => {DAY_OF_WEEK=Thursday} 0.003944282 0.1607740  0.024533088 1.173278 5243 
+[9]  {LATE_AIRCRAFT_DELAY=Medium} => {DAY_OF_WEEK=Friday}   0.004352026 0.1773941  0.024533088 1.291242 5785 
+[10] {LATE_AIRCRAFT_DELAY=Medium} => {DAY_OF_WEEK=Monday}   0.004192539 0.1708933  0.024533088 1.045965 5573 
+[11] {LATE_AIRCRAFT_DELAY=Short}  => {DAY_OF_WEEK=Thursday} 0.004286576 0.1607606  0.026664340 1.173180 5698 
+[12] {LATE_AIRCRAFT_DELAY=Short}  => {DAY_OF_WEEK=Friday}   0.004558907 0.1709739  0.026664340 1.244509 6060 
+[13] {LATE_AIRCRAFT_DELAY=Short}  => {DAY_OF_WEEK=Monday}   0.004626613 0.1735131  0.026664340 1.062000 6150 
+[14] {LATE_AIRCRAFT_DELAY=Short}  => {DAY_OF_WEEK=Sunday}   0.004478411 0.1679551  0.026664340 1.008912 5953 
+
+     lhs                             rhs                          support     confidence coverage    lift     count
+[1]  {LATE_AIRCRAFT_DELAY=Severe} => {CRS_ARR_TIME=Late Evening}  0.002347912 0.2405024  0.009762531 1.476370 3121 
+[2]  {LATE_AIRCRAFT_DELAY=Severe} => {CRS_ARR_TIME=Early Evening} 0.002393802 0.2452031  0.009762531 1.345092 3182 
+[3]  {LATE_AIRCRAFT_DELAY=Severe} => {CRS_ARR_TIME=Afternoon}     0.002506647 0.2567620  0.009762531 1.049759 3332 
+[4]  {LATE_AIRCRAFT_DELAY=Long}   => {CRS_ARR_TIME=Overnight}     0.001846884 0.1070416  0.017253883 1.637099 2455 
+[5]  {LATE_AIRCRAFT_DELAY=Long}   => {CRS_ARR_TIME=Late Evening}  0.004505494 0.2611293  0.017253883 1.602992 5989 
+[6]  {LATE_AIRCRAFT_DELAY=Long}   => {CRS_ARR_TIME=Early Evening} 0.004502485 0.2609549  0.017253883 1.431501 5985 
+[7]  {LATE_AIRCRAFT_DELAY=Medium} => {CRS_ARR_TIME=Overnight}     0.002618738 0.1067431  0.024533088 1.632533 3481 
+[8]  {LATE_AIRCRAFT_DELAY=Medium} => {CRS_ARR_TIME=Late Evening}  0.006454690 0.2631014  0.024533088 1.615098 8580 
+[9]  {LATE_AIRCRAFT_DELAY=Medium} => {CRS_ARR_TIME=Early Evening} 0.006312506 0.2573058  0.024533088 1.411484 8391 
+[10] {LATE_AIRCRAFT_DELAY=Medium} => {CRS_ARR_TIME=Afternoon}     0.006095093 0.2484438  0.024533088 1.015750 8102 
+[11] {LATE_AIRCRAFT_DELAY=Short}  => {CRS_ARR_TIME=Overnight}     0.002712023 0.1017097  0.026664340 1.555553 3605 
+[12] {LATE_AIRCRAFT_DELAY=Short}  => {CRS_ARR_TIME=Late Evening}  0.006555498 0.2458526  0.026664340 1.509213 8714 
+[13] {LATE_AIRCRAFT_DELAY=Short}  => {CRS_ARR_TIME=Early Evening} 0.006997847 0.2624422  0.026664340 1.439660 9302 
+[14] {LATE_AIRCRAFT_DELAY=Short}  => {CRS_ARR_TIME=Afternoon}     0.006894030 0.2585487  0.026664340 1.057064 9164 
+
+     lhs                             rhs                        support     confidence coverage    lift     count
+[1]  {LATE_AIRCRAFT_DELAY=Severe} => {DISTANCE=1000-1249 miles} 0.001059983 0.1085767  0.009762531 1.039208  1409
+[2]  {LATE_AIRCRAFT_DELAY=Severe} => {DISTANCE=< 250 miles}     0.001593361 0.1632118  0.009762531 1.113419  2118
+[3]  {LATE_AIRCRAFT_DELAY=Severe} => {DISTANCE=500-749 miles}   0.001973269 0.2021268  0.009762531 1.031660  2623
+[4]  {LATE_AIRCRAFT_DELAY=Severe} => {DISTANCE=250-499 miles}   0.002633784 0.2697850  0.009762531 1.069547  3501
+[5]  {LATE_AIRCRAFT_DELAY=Long}   => {DISTANCE=< 250 miles}     0.002803051 0.1624591  0.017253883 1.108284  3726
+[6]  {LATE_AIRCRAFT_DELAY=Long}   => {DISTANCE=500-749 miles}   0.003496667 0.2026597  0.017253883 1.034380  4648
+[7]  {LATE_AIRCRAFT_DELAY=Long}   => {DISTANCE=250-499 miles}   0.004873366 0.2824504  0.017253883 1.119759  6478
+[8]  {LATE_AIRCRAFT_DELAY=Medium} => {DISTANCE=< 250 miles}     0.003838961 0.1564809  0.024533088 1.067501  5103
+[9]  {LATE_AIRCRAFT_DELAY=Medium} => {DISTANCE=500-749 miles}   0.004958376 0.2021097  0.024533088 1.031572  6591
+[10] {LATE_AIRCRAFT_DELAY=Medium} => {DISTANCE=250-499 miles}   0.007020416 0.2861611  0.024533088 1.134470  9332
+[11] {LATE_AIRCRAFT_DELAY=Short}  => {DISTANCE=< 250 miles}     0.004087970 0.1533123  0.026664340 1.045885  5434
+[12] {LATE_AIRCRAFT_DELAY=Short}  => {DISTANCE=500-749 miles}   0.005310450 0.1991592  0.026664340 1.016513  7059
+[13] {LATE_AIRCRAFT_DELAY=Short}  => {DISTANCE=250-499 miles}   0.007603444 0.2851540  0.026664340 1.130477 10107
+
+
+# Rules with CARRIER_DELAY on RHS:
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport maxtime support minlen maxlen target  ext
+       0.04    0.1    1 none FALSE            TRUE       5   0.001      2      3  rules TRUE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+
+Absolute minimum support count: 1329 
+
+set item appearances ...[4 item(s)] done [0.00s].
+set transactions ...[33 item(s), 1329266 transaction(s)] done [0.26s].
+sorting and recoding items ... [33 item(s)] done [0.03s].
+creating transaction tree ... done [0.72s].
+checking subsets of size 1 2 3 done [0.00s].
+writing ... [2 rule(s)] done [0.00s].
+creating S4 object  ... done [0.12s].
+
+    lhs                                                    rhs                   support     confidence coverage   lift     count
+[1] {CRS_DEP_TIME=Late Evening, CRS_ARR_TIME=Overnight} => {CARRIER_DELAY=Short} 0.002145545 0.04211024 0.05095068 1.791796 2852 
+[2] {CRS_ARR_TIME=Overnight}                            => {CARRIER_DELAY=Short} 0.002694720 0.04121315 0.06538496 1.753625 3582 
+
+
+# WEATHER_DELAY ANALYSIS - NO RULES
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport maxtime support minlen maxlen target  ext
+       0.04    0.1    1 none FALSE            TRUE       5   0.001      2      3  rules TRUE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+
+Absolute minimum support count: 1329 
+
+set item appearances ...[4 item(s)] done [0.00s].
+set transactions ...[33 item(s), 1329266 transaction(s)] done [0.26s].
+sorting and recoding items ... [33 item(s)] done [0.03s].
+creating transaction tree ... done [0.71s].
+checking subsets of size 1 2 3 done [0.00s].
+writing ... [0 rule(s)] done [0.00s].
+creating S4 object  ... done [0.11s].
+
+
+# SECURITY_DELAY ANALYSIS - NO RULES
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport maxtime support minlen maxlen target  ext
+       0.04    0.1    1 none FALSE            TRUE       5   0.001      2      3  rules TRUE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+
+Absolute minimum support count: 1329 
+
+set item appearances ...[4 item(s)] done [0.00s].
+set transactions ...[33 item(s), 1329266 transaction(s)] done [0.27s].
+sorting and recoding items ... [29 item(s)] done [0.03s].
+creating transaction tree ... done [0.77s].
+checking subsets of size 1 2 3 done [0.00s].
+writing ... [0 rule(s)] done [0.00s].
+creating S4 object  ... done [0.12s].
+
+
+# Rules with CANCELLED on LHS:
+Apriori
+
+Parameter specification:
+ confidence minval smax arem  aval originalSupport maxtime support minlen maxlen target  ext
+       0.04    0.1    1 none FALSE            TRUE       5   0.001      2      4  rules TRUE
+
+Algorithmic control:
+ filter tree heap memopt load sort verbose
+    0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+
+Absolute minimum support count: 1329 
+
+set item appearances ...[1 item(s)] done [0.00s].
+set transactions ...[35 item(s), 1329266 transaction(s)] done [0.29s].
+sorting and recoding items ... [31 item(s)] done [0.04s].
+creating transaction tree ... done [0.74s].
+checking subsets of size 1 2 done [0.00s].
+writing ... [23 rule(s)] done [0.00s].
+creating S4 object  ... done [0.11s].
+
+    lhs              rhs                  support     confidence coverage   lift     count
+[1] {CANCELLED=1} => {DAY_OF_WEEK=Monday} 0.002329105 0.2066894  0.01126862 1.265057 3096 
+[2] {CANCELLED=1} => {DAY_OF_WEEK=Sunday} 0.002941473 0.2610321  0.01126862 1.568028 3910 
+
+    lhs              rhs                          support     confidence coverage   lift     count
+[1] {CANCELLED=1} => {CRS_DEP_TIME=Late Evening}  0.001420333 0.1260431  0.01126862 1.263784 1888 
+[2] {CANCELLED=1} => {CRS_DEP_TIME=Early Evening} 0.002166609 0.1922692  0.01126862 1.100543 2880 
+
+    lhs              rhs                      support     confidence coverage   lift     count
+[1] {CANCELLED=1} => {DISTANCE=< 250 miles}   0.002809069 0.2492823  0.01126862 1.700586 3734 
+[2] {CANCELLED=1} => {DISTANCE=500-749 miles} 0.002228297 0.1977435  0.01126862 1.009287 2962 
+[3] {CANCELLED=1} => {DISTANCE=250-499 miles} 0.003857016 0.3422792  0.01126862 1.356947 5127 
